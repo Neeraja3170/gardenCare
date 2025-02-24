@@ -1,0 +1,663 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    background-color: transparent; /* Remove any background color */
+}
+
+/* Navigation Styles */
+.navbar {
+    background: #4CAF50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Home Section Styles */
+.home-section {
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: transparent; /* Remove background color */
+    color: white; /* Ensure text is visible on slideshow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency for better contrast */
+    border-radius: 8px;
+    backdrop-filter: blur(5px); /* Add blur effect for better readability */
+}
+
+.home-content h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    color: white;
+    line-height: 1.8;
+}
+
+/* Plant Section Styles */
+.plant-section {
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: transparent; /* Remove background color */
+    color: white; /* Ensure text is visible on slideshow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+.plant-section h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Plant Cards Layout */
+.plant-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plant-card {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency for better contrast */
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1 1 30%; /* Three cards per row */
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Add blur effect for better readability */
+}
+
+.plant-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+    max-width: 1024px; /* Ensure the image does not exceed 1024px in width */
+    max-height: 1024px; /* Ensure the image does not exceed 1024px in height */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.plant-card h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.plant-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.medical-btn, .household-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.medical-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.household-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.medical-btn:hover {
+    background-color: #45a049;
+}
+
+.household-btn:hover {
+    background-color: #1e88e5;
+}
+
+/* Plant Content Styles */
+.plant-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Fullscreen Slideshow */
+.slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Ensure slideshow is behind all content */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Fruits Section */
+.fruits-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fruits-section h2 {
+  font-size: 2rem;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.fruits-section p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+  /* Garden Tips Section */
+  .garden-tips {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .garden-tips h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    position: relative;
+  }
+  
+  .garden-tips h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #27ae60;
+    margin: 10px auto 0;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Filter Buttons */
+  .filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons .filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-buttons .filter-btn.active {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  
+  .filter-buttons .filter-btn:hover {
+    background-color: #219150;
+    color: #fff;
+  }
+  
+  /* Tips Container */
+  .tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .tip-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .tip-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tip-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #27ae60;
+  }
+  
+  .tip-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .tip-card .more-content {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .tip-card .expand-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tip-card .expand-btn:hover {
+    background-color: #219150;
+  }
+/* Hide plant content by default */
+.plant-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }/* Style for plant content */
+.plant-content {
+    display: none; /* Hide content by default */
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f5f5f5; /* Light grey background */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Light grey border */
+    color: #333; /* Dark grey text for better readability */
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  /* Tips Container - Horizontal Layout */
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between tip cards */
+    padding: 20px;
+  }
+  
+  /* Tip Card Styles */
+  .tip-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .tip-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tip-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #27ae60;
+  }
+  
+  .tip-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .tip-card .more-content {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .tip-card .expand-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tip-card .expand-btn:hover {
+    background-color: #219150;
+  }
+  /* Community Section Styles */
+#community {
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
+  text-align: center;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  margin: 20px 0; /* Optional: Adds spacing around the section */
+}
+
+#community h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#community p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.community-feature {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.community-feature h3 {
+  font-size: 1.8rem;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.community-feature p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.community-feature textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.community-feature input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.community-feature .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.community-feature .btn:hover {
+  background-color: #219150;
+}
+
+#forum-posts, #story-posts {
+  margin-top: 20px;
+}
+
+.post {
+  background-color: rgba(241, 241, 241, 0.9); /* Slightly opaque background for posts */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#event-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#event-list li {
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  padding: 5px 10px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #219150;
+}
+
+#registration-message, #challenge-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Styling for About Us Section with Transparent Background */
+#about-us {
+  padding: 40px 20px;
+  background-color: rgba(249, 249, 249, 0.8); /* White with 80% opacity */
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+#about-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about-us h2 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#about-us h3 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about-us ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#about-us ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Contact Us Section Styling */
+#contact-us {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#contact-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact-us h2 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact-us h3 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-details ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.contact-details a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+

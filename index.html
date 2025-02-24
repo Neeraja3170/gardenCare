@@ -1,0 +1,1591 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Care Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><i class="fas fa-leaf"></i> GardenCare</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#vegetables"><i class="fas fa-carrot"></i> Vegetables</a></li>
+        <li><a href="#flowers"><i class="fas fa-spa"></i> Flowers</a></li>
+        <li><a href="#fruits"><i class="fas fa-apple-alt"></i> Fruits</a></li>
+        <li><a href="#garden-tips"><i class="fas fa-spa"></i> Gardening Tips</a></li>
+        <li><a href="#community"><i class="fas fa-users"></i> Community</a></li>
+        <li><a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#contact-us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home-section" id="home">
+      <div class="home-content">
+        <h1 class="breathing-text">Welcome to GardenCare, where we celebrate the healing power of nature!</h1>
+        <p>Discover how gardening can be a therapeutic escape, reducing stress and promoting mental well-being. Learn about the medicinal properties of plants like lavender, aloe vera, and peppermint, and how to grow them in your own garden. Explore tips for creating a calming, healing garden space, from aromatherapy plants to DIY herbal remedies. Whether you're looking to unwind with mindful gardening activities or harness the natural benefits of medicinal herbs, we're here to guide you in transforming your garden into a sanctuary for both body and soul.</p>
+      </div>
+    </section>
+  </main>
+
+  <section id="vegetables" class="plant-section">
+    <h2>Vegetables</h2>
+    <div class="plant-cards-container">
+      <!-- Tomato Card -->
+      <section class="plant-card" id="tomato-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/tomato.webp" alt="Tomato Plant" class="plant-image">
+        <h3>Tomato</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="tomato" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="tomato" data-type="household">Household Use</button>
+        </div>
+        <!-- Tomato Content -->
+        <div class="plant-content" id="tomato-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Tomatoes are rich in antioxidants like lycopene, which can help reduce the risk of heart disease and cancer.</p>
+        </div>
+        <div class="plant-content" id="tomato-household" style="display: none;">
+          <p><strong>Household Use:</strong> Tomatoes can be used to clean and polish metals like copper and brass.</p>
+        </div>
+      </section>
+
+      <!-- Carrot Card -->
+      <section class="plant-card" id="carrot-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/carrot.webp" alt="Carrot Plant" class="plant-image">
+        <h3>Carrot</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="carrot" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="carrot" data-type="household">Household Use</button>
+        </div>
+        <!-- Carrot Content -->
+        <div class="plant-content" id="carrot-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Carrots are high in beta-carotene, which is good for eye health and immune function.</p>
+        </div>
+        <div class="plant-content" id="carrot-household" style="display: none;">
+          <p><strong>Household Use:</strong> Carrots can be used to make natural dyes for fabrics.</p>
+        </div>
+      </section>
+
+      <!-- Spinach Card -->
+      <section class="plant-card" id="spinach-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/spinach.webp" alt="Spinach Plant" class="plant-image">
+        <h3>Spinach</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="spinach" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="spinach" data-type="household">Household Use</button>
+        </div>
+        <!-- Spinach Content -->
+        <div class="plant-content" id="spinach-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Spinach is rich in iron and vitamins, making it great for boosting energy and improving blood health.</p>
+        </div>
+        <div class="plant-content" id="spinach-household" style="display: none;">
+          <p><strong>Household Use:</strong> Spinach can be used as a natural cleaner for stainless steel surfaces.</p>
+        </div>
+      </section>
+
+      <!-- Brinjal Card -->
+      <section class="plant-card" id="brinjal-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/brinjal.webp" alt="Brinjal Plant" class="plant-image">
+        <h3>Brinjal</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="brinjal" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="brinjal" data-type="household">Household Use</button>
+        </div>
+        <!-- Brinjal Content -->
+        <div class="plant-content" id="brinjal-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Brinjal is rich in fiber and antioxidants, which can help improve digestion and reduce cholesterol.</p>
+        </div>
+        <div class="plant-content" id="brinjal-household" style="display: none;">
+          <p><strong>Household Use:</strong> Brinjal can be used as a natural polish for wooden furniture.</p>
+        </div>
+      </section>
+
+      <!-- Cabbage Card -->
+      <section class="plant-card" id="cabbage-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/cabbage.webp" alt="Cabbage Plant" class="plant-image">
+        <h3>Cabbage</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="cabbage" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="cabbage" data-type="household">Household Use</button>
+        </div>
+        <!-- Cabbage Content -->
+        <div class="plant-content" id="cabbage-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Cabbage is rich in vitamins C and K, which can help improve digestion and reduce inflammation.</p>
+        </div>
+        <div class="plant-content" id="cabbage-household" style="display: none;">
+          <p><strong>Household Use:</strong> Cabbage leaves can be used as a natural wrap for soothing skin irritations.</p>
+        </div>
+      </section>
+
+      <!-- Cauliflower Card -->
+      <section class="plant-card" id="cauliflower-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/cauliflower.webp" alt="Cauliflower Plant" class="plant-image">
+        <h3>Cauliflower</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="cauliflower" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="cauliflower" data-type="household">Household Use</button>
+        </div>
+        <!-- Cauliflower Content -->
+        <div class="plant-content" id="cauliflower-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Cauliflower is high in fiber and antioxidants, which can help support heart health and digestion.</p>
+        </div>
+        <div class="plant-content" id="cauliflower-household" style="display: none;">
+          <p><strong>Household Use:</strong> Cauliflower can be used as a natural cleaner for kitchen surfaces.</p>
+        </div>
+      </section>
+
+      <!-- Bitter Gourd Card -->
+      <section class="plant-card" id="bitter-gourd-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/bittergoud.webp" alt="Bitter Gourd Plant" class="plant-image">
+        <h3>Bitter Gourd</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="bitter-gourd" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="bitter-gourd" data-type="household">Household Use</button>
+        </div>
+        <!-- Bitter Gourd Content -->
+        <div class="plant-content" id="bitter-gourd-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Bitter gourd is known for its blood sugar-regulating properties and is rich in vitamins and minerals.</p>
+        </div>
+        <div class="plant-content" id="bitter-gourd-household" style="display: none;">
+          <p><strong>Household Use:</strong> Bitter gourd can be used as a natural pesticide in gardens.</p>
+        </div>
+      </section>
+
+      <!-- Okra Card -->
+      <section class="plant-card" id="okra-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/okra.webp" alt="Okra Plant" class="plant-image">
+        <h3>Okra</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="okra" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="okra" data-type="household">Household Use</button>
+        </div>
+        <!-- Okra Content -->
+        <div class="plant-content" id="okra-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Okra is rich in fiber, vitamins, and antioxidants, which can help improve digestion and heart health.</p>
+        </div>
+        <div class="plant-content" id="okra-household" style="display: none;">
+          <p><strong>Household Use:</strong> Okra can be used as a natural thickening agent in soups and stews.</p>
+        </div>
+      </section>
+
+      <!-- Squash Card -->
+      <section class="plant-card" id="squash-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/squash.webp" alt="Squash Plant" class="plant-image">
+        <h3>Squash</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="squash" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="squash" data-type="household">Household Use</button>
+        </div>
+        <!-- Squash Content -->
+        <div class="plant-content" id="squash-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Squash is rich in vitamins A and C, which can help boost immunity and improve eye health.</p>
+        </div>
+        <div class="plant-content" id="squash-household" style="display: none;">
+          <p><strong>Household Use:</strong> Squash can be used as a natural decoration during fall seasons.</p>
+        </div>
+      </section>
+
+      <!-- Pumpkin Card -->
+      <section class="plant-card" id="pumpkin-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/pumpkin.webp" alt="Pumpkin Plant" class="plant-image">
+        <h3>Pumpkin</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="pumpkin" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="pumpkin" data-type="household">Household Use</button>
+        </div>
+        <!-- Pumpkin Content -->
+        <div class="plant-content" id="pumpkin-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Pumpkin is rich in beta-carotene, which is good for eye health and immune function.</p>
+        </div>
+        <div class="plant-content" id="pumpkin-household" style="display: none;">
+          <p><strong>Household Use:</strong> Pumpkin can be used to make natural face masks for glowing skin.</p>
+        </div>
+      </section>
+
+      <!-- Leek Card -->
+      <section class="plant-card" id="leek-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/leek.webp" alt="Leek Plant" class="plant-image">
+        <h3>Leek</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="leek" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="leek" data-type="household">Household Use</button>
+        </div>
+        <!-- Leek Content -->
+        <div class="plant-content" id="leek-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Leeks are rich in vitamins A and K, which can help improve bone health and vision.</p>
+        </div>
+        <div class="plant-content" id="leek-household" style="display: none;">
+          <p><strong>Household Use:</strong> Leeks can be used as a natural flavor enhancer in soups and stews.</p>
+        </div>
+      </section>
+
+      <!-- Broccoli Card -->
+      <section class="plant-card" id="broccoli-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/brocoli.webp" alt="Broccoli Plant" class="plant-image">
+        <h3>Broccoli</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="broccoli" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="broccoli" data-type="household">Household Use</button>
+        </div>
+        <!-- Broccoli Content -->
+        <div class="plant-content" id="broccoli-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Broccoli is rich in vitamins C and K, which can help boost immunity and improve bone health.</p>
+        </div>
+        <div class="plant-content" id="broccoli-household" style="display: none;">
+          <p><strong>Household Use:</strong> Broccoli can be used as a natural dye for fabrics.</p>
+        </div>
+      </section>
+
+      <!-- Sweet Potato Card -->
+      <section class="plant-card" id="sweet-potato-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/sweet%20potato.webp" alt="Sweet Potato Plant" class="plant-image">
+        <h3>Sweet Potato</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="sweet-potato" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="sweet-potato" data-type="household">Household Use</button>
+        </div>
+        <!-- Sweet Potato Content -->
+        <div class="plant-content" id="sweet-potato-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Sweet potatoes are rich in beta-carotene, which is good for eye health and immune function.</p>
+        </div>
+        <div class="plant-content" id="sweet-potato-household" style="display: none;">
+          <p><strong>Household Use:</strong> Sweet potatoes can be used to make natural face masks for glowing skin.</p>
+        </div>
+      </section>
+
+      <!-- Turnip Card -->
+      <section class="plant-card" id="turnip-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/turnip.webp" alt="Turnip Plant" class="plant-image">
+        <h3>Turnip</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="turnip" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="turnip" data-type="household">Household Use</button>
+        </div>
+        <!-- Turnip Content -->
+        <div class="plant-content" id="turnip-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Turnips are rich in vitamins C and K, which can help boost immunity and improve bone health.</p>
+        </div>
+        <div class="plant-content" id="turnip-household" style="display: none;">
+          <p><strong>Household Use:</strong> Turnips can be used as a natural dye for fabrics.</p>
+        </div>
+      </section>
+
+      <!-- Radish Card -->
+      <section class="plant-card" id="radish-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/radish.webp" alt="Radish Plant" class="plant-image">
+        <h3>Radish</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="radish" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="radish" data-type="household">Household Use</button>
+        </div>
+        <!-- Radish Content -->
+        <div class="plant-content" id="radish-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Radishes are rich in vitamins C and B6, which can help boost immunity and improve digestion.</p>
+        </div>
+        <div class="plant-content" id="radish-household" style="display: none;">
+          <p><strong>Household Use:</strong> Radishes can be used as a natural cleaner for kitchen surfaces.</p>
+        </div>
+      </section>
+
+      <!-- Beetroot Card -->
+      <section class="plant-card" id="beetroot-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/beetroot.webp" alt="Beetroot Plant" class="plant-image">
+        <h3>Beetroot</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="beetroot" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="beetroot" data-type="household">Household Use</button>
+        </div>
+        <!-- Beetroot Content -->
+        <div class="plant-content" id="beetroot-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Beetroot is rich in nitrates, which can help improve blood flow and lower blood pressure.</p>
+        </div>
+        <div class="plant-content" id="beetroot-household" style="display: none;">
+          <p><strong>Household Use:</strong> Beetroot can be used as a natural dye for fabrics and food.</p>
+        </div>
+      </section>
+
+      <!-- Lettuce Card -->
+      <section class="plant-card" id="lettuce-card">
+        <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/lettuce.webp" alt="Lettuce Plant" class="plant-image">
+        <h3>Lettuce</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="beetroot" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="beetroot" data-type="household">Household Use</button>
+        </div>
+        <!-- Beetroot Content -->
+        <div class="plant-content" id="beetroot-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Beetroot is rich in nitrates, which can help improve blood flow and lower blood pressure.</p>
+        </div>
+        <div class="plant-content" id="beetroot-household" style="display: none;">
+          <p><strong>Household Use:</strong> Beetroot can be used as a natural dye for fabrics and food.</p>
+        </div>
+      </section>
+
+      <!-- Lettuce Card -->
+      <section class="plant-card" id="lettuce-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/lettuce.webp" alt="Lettuce Plant" class="plant-image">
+
+        <h3>Lettuce</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="lettuce" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="lettuce" data-type="household">Household Use</button>
+        </div>
+        <!-- Lettuce Content -->
+        <div class="plant-content" id="lettuce-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Lettuce is rich in vitamins A and K, which can help improve vision and bone health.</p>
+        </div>
+        <div class="plant-content" id="lettuce-household" style="display: none;">
+          <p><strong>Household Use:</strong> Lettuce can be used as a natural wrap for sandwiches and rolls.</p>
+        </div>
+      </section>
+
+      <!-- Potato Card -->
+      <section class="plant-card" id="potato-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/potato.webp" alt="Potato Plant" class="plant-image">
+
+        <h3>Potato</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="potato" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="potato" data-type="household">Household Use</button>
+        </div>
+        <!-- Potato Content -->
+        <div class="plant-content" id="potato-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Potatoes are rich in potassium, which can help regulate blood pressure and improve heart health.</p>
+        </div>
+        <div class="plant-content" id="potato-household" style="display: none;">
+          <p><strong>Household Use:</strong> Potatoes can be used to remove stains from silverware.</p>
+        </div>
+      </section>
+
+      <!-- Bell Pepper Card -->
+      <section class="plant-card" id="bell-pepper-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/bell%20pepper.webp" alt="Bell Pepper Plant" class="plant-image">
+
+        <h3>Bell Pepper</h3>
+        <div class="plant-buttons">
+          <button class="medical-btn" data-plant="bell-pepper" data-type="medical">Medical Use</button>
+          <button class="household-btn" data-plant="bell-pepper" data-type="household">Household Use</button>
+        </div>
+        <!-- Bell Pepper Content -->
+        <div class="plant-content" id="bell-pepper-medical" style="display: none;">
+          <p><strong>Medical Use:</strong> Bell peppers are rich in vitamins A and C, which can help boost immunity and improve skin health.</p>
+        </div>
+        <div class="plant-content" id="bell-pepper-household" style="display: none;">
+          <p><strong>Household Use:</strong> Bell peppers can be used as a natural decoration for dishes.</p>
+        </div>
+      </section>
+      <!-- Snow Peas Card -->
+<section class="plant-card" id="snow-peas-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/snow%20peas.webp" alt="Snow Peas Plant" class="plant-image">
+
+  <h3>Snow Peas</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="snow-peas" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="snow-peas" data-type="household">Household Use</button>
+  </div>
+  <!-- Snow Peas Content -->
+  <div class="plant-content" id="snow-peas-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Snow peas are rich in vitamins and antioxidants that support overall health.</p>
+  </div>
+  <div class="plant-content" id="snow-peas-household" style="display: none;">
+    <p><strong>Household Use:</strong> They can be used to add a crisp, fresh flavor to dishes and natural decor.</p>
+  </div>
+</section>
+
+<!-- Snap Peas Card -->
+<section class="plant-card" id="snap-peas-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/snap%20peas.webp" alt="Snap Peas Plant" class="plant-image">
+
+  <h3>Snap Peas</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="snap-peas" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="snap-peas" data-type="household">Household Use</button>
+  </div>
+  <!-- Snap Peas Content -->
+  <div class="plant-content" id="snap-peas-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Snap peas contain fiber and vitamins that aid digestion and boost immunity.</p>
+  </div>
+  <div class="plant-content" id="snap-peas-household" style="display: none;">
+    <p><strong>Household Use:</strong> They add a crunchy texture to meals and serve as a decorative edible element.</p>
+  </div>
+</section>
+
+<!-- Chickpeas Card -->
+<section class="plant-card" id="chickpeas-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/chickpeas.webp" alt="Chickpeas Plant" class="plant-image">
+
+  <h3>Chickpeas</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="chickpeas" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="chickpeas" data-type="household">Household Use</button>
+  </div>
+  <!-- Chickpeas Content -->
+  <div class="plant-content" id="chickpeas-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Chickpeas are an excellent source of protein and fiber, supporting heart health.</p>
+  </div>
+  <div class="plant-content" id="chickpeas-household" style="display: none;">
+    <p><strong>Household Use:</strong> They can be used in various recipes to create nutritious and hearty meals.</p>
+  </div>
+</section>
+
+<!-- Cassava Card -->
+<section class="plant-card" id="cassava-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/cassava.webp" alt="Cassava Plant" class="plant-image">
+
+  <h3>Cassava</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="cassava" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="cassava" data-type="household">Household Use</button>
+  </div>
+  <!-- Cassava Content -->
+  <div class="plant-content" id="cassava-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Cassava is a good source of carbohydrates and provides essential minerals.</p>
+  </div>
+  <div class="plant-content" id="cassava-household" style="display: none;">
+    <p><strong>Household Use:</strong> Its flour can be used as a gluten-free alternative in cooking and baking.</p>
+  </div>
+</section>
+
+<!-- Pointed Gourd Card -->
+<section class="plant-card" id="pointed-gourd-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/pointed%20gourd.webp" alt="Pointed Gourd Plant" class="plant-image">
+
+  <h3>Pointed Gourd</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="pointed-gourd" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="pointed-gourd" data-type="household">Household Use</button>
+  </div>
+  <!-- Pointed Gourd Content -->
+  <div class="plant-content" id="pointed-gourd-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Pointed gourd is known for its low-calorie content and beneficial vitamins.</p>
+  </div>
+  <div class="plant-content" id="pointed-gourd-household" style="display: none;">
+    <p><strong>Household Use:</strong> It can be used as a nutritious ingredient in various culinary dishes.</p>
+  </div>
+</section>
+
+<!-- Chilli Card -->
+<section class="plant-card" id="chilli-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/chilli.webp" alt="Chilli Plant" class="plant-image">
+
+  <h3>Chilli</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="chilli" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="chilli" data-type="household">Household Use</button>
+  </div>
+  <!-- Chilli Content -->
+  <div class="plant-content" id="chilli-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Chilli peppers contain capsaicin, which can help with pain relief and boost metabolism.</p>
+  </div>
+  <div class="plant-content" id="chilli-household" style="display: none;">
+    <p><strong>Household Use:</strong> They are used to add a spicy kick to food and as natural pest repellents.</p>
+  </div>
+</section>
+
+<!-- Coriander Card -->
+<section class="plant-card" id="coriander-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/coriander.webp" alt="Coriander Plant" class="plant-image">
+
+  <h3>Coriander</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="coriander" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="coriander" data-type="household">Household Use</button>
+  </div>
+  <!-- Coriander Content -->
+  <div class="plant-content" id="coriander-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Coriander is known for its anti-inflammatory and digestive properties.</p>
+  </div>
+  <div class="plant-content" id="coriander-household" style="display: none;">
+    <p><strong>Household Use:</strong> Its fresh leaves can enhance the flavor of many dishes and natural remedies.</p>
+  </div>
+</section>
+
+<!-- Curry Leaves Card -->
+<section class="plant-card" id="curry-leaves-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/curryleaves.webp" alt="Curry Leaves Plant" class="plant-image">
+
+  <h3>Curry Leaves</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="curry-leaves" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="curry-leaves" data-type="household">Household Use</button>
+  </div>
+  <!-- Curry Leaves Content -->
+  <div class="plant-content" id="curry-leaves-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Curry leaves are known for their antioxidant and anti-diabetic properties.</p>
+  </div>
+  <div class="plant-content" id="curry-leaves-household" style="display: none;">
+    <p><strong>Household Use:</strong> They are used to flavor food and as a natural preservative.</p>
+  </div>
+</section>
+
+<!-- Mushroom Card -->
+<section class="plant-card" id="mushroom-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/mushroom.webp" alt="Mushroom" class="plant-image">
+  <h3>Mushroom</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="mushroom" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="mushroom" data-type="household">Household Use</button>
+  </div>
+  <!-- Mushroom Content -->
+  <div class="plant-content" id="mushroom-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Mushrooms provide vitamins and minerals that support immune health.</p>
+  </div>
+  <div class="plant-content" id="mushroom-household" style="display: none;">
+    <p><strong>Household Use:</strong> They are used as a nutritious food ingredient and natural flavor enhancer.</p>
+  </div>
+</section>
+
+<!-- Snake Gourd Card -->
+<section class="plant-card" id="snake-gourd-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/snakegourd.webp" alt="Snake Gourd Plant" class="plant-image">
+  <h3>Snake Gourd</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="snake-gourd" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="snake-gourd" data-type="household">Household Use</button>
+  </div>
+  <!-- Snake Gourd Content -->
+  <div class="plant-content" id="snake-gourd-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Snake gourd is valued for its cooling properties and high nutrient content.</p>
+  </div>
+  <div class="plant-content" id="snake-gourd-household" style="display: none;">
+    <p><strong>Household Use:</strong> It can be used in a variety of culinary dishes and home remedies.</p>
+  </div>
+</section>
+
+</div>
+  </section>
+    <!-- Flowers Section -->
+    <section id="flowers" class="plant-section">
+      <h2>Flowers</h2>
+      <div class="plant-cards-container">
+        <!-- Rose Card -->
+        <section class="plant-card" id="rose-card">
+          <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/rose.webp" alt="Rose Flower" class="plant-image">
+          <h3>Rose</h3>
+          <div class="plant-buttons">
+            <button class="medical-btn" data-plant="rose" data-type="medical">Medical Use</button>
+            <button class="household-btn" data-plant="rose" data-type="household">Household Use</button>
+          </div>
+          <!-- Rose Content -->
+          <div class="plant-content" id="rose-medical" style="display: none;">
+            <p><strong>Medical Use:</strong> Roses are known for their calming properties and are often used in aromatherapy to reduce stress and anxiety.</p>
+          </div>
+          <div class="plant-content" id="rose-household" style="display: none;">
+            <p><strong>Household Use:</strong> Rose petals can be used to make natural potpourri or as a fragrant addition to baths.</p>
+          </div>
+        </section>
+  
+        <!-- Lavender Card -->
+        <section class="plant-card" id="lavender-card">
+          <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/lavender.webp" alt="Lavender Flower" class="plant-image">
+          <h3>Lavender</h3>
+          <div class="plant-buttons">
+            <button class="medical-btn" data-plant="lavender" data-type="medical">Medical Use</button>
+            <button class="household-btn" data-plant="lavender" data-type="household">Household Use</button>
+          </div>
+          <!-- Lavender Content -->
+          <div class="plant-content" id="lavender-medical" style="display: none;">
+            <p><strong>Medical Use:</strong> Lavender is widely used for its relaxing and sleep-inducing properties. It can also help soothe skin irritations.</p>
+          </div>
+          <div class="plant-content" id="lavender-household" style="display: none;">
+            <p><strong>Household Use:</strong> Lavender can be used to make natural sachets or as a natural air freshener.</p>
+          </div>
+        </section>
+              <!-- Lotus Card -->
+              <section class="plant-card" id="lotus-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/lotus.webp" alt="Lotus Flower" class="plant-image">
+                <h3>Lotus</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="lotus" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="lotus" data-type="household">Household Use</button>
+                </div>
+                <!-- Lotus Content -->
+                <div class="plant-content" id="lotus-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Lotus flowers are used in traditional medicine to treat digestive issues and reduce inflammation.</p>
+                </div>
+                <div class="plant-content" id="lotus-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Lotus flowers are often used in religious ceremonies and as decorative elements in ponds.</p>
+                </div>
+              </section>
+        
+              <!-- Chrysanthemum Card -->
+              <section class="plant-card" id="chrysanthemum-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/chyrsanthamum.webp" alt="Chrysanthemum Flower" class="plant-image">
+                <h3>Chrysanthemum</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="chrysanthemum" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="chrysanthemum" data-type="household">Household Use</button>
+                </div>
+                <!-- Chrysanthemum Content -->
+                <div class="plant-content" id="chrysanthemum-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Chrysanthemums are used in herbal teas to reduce fever and improve eye health.</p>
+                </div>
+                <div class="plant-content" id="chrysanthemum-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Chrysanthemums are often used in floral arrangements and as natural insect repellents.</p>
+                </div>
+              </section>
+        
+              <!-- Peony Card -->
+              <section class="plant-card" id="peony-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/peony.webp" alt="Peony Flower" class="plant-image">
+                <h3>Peony</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="peony" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="peony" data-type="household">Household Use</button>
+                </div>
+                <!-- Peony Content -->
+                <div class="plant-content" id="peony-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Peonies are used in traditional medicine to relieve pain and reduce inflammation.</p>
+                </div>
+                <div class="plant-content" id="peony-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Peonies are popular in wedding bouquets and as ornamental garden plants.</p>
+                </div>
+              </section>
+        
+              <!-- Gardenia Card -->
+              <section class="plant-card" id="gardenia-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/gardenia.webp" alt="Gardenia Flower" class="plant-image">
+                <h3>Gardenia</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="gardenia" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="gardenia" data-type="household">Household Use</button>
+                </div>
+                <!-- Gardenia Content -->
+                <div class="plant-content" id="gardenia-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Gardenias are used in aromatherapy to reduce anxiety and promote relaxation.</p>
+                </div>
+                <div class="plant-content" id="gardenia-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Gardenias are often used in perfumes and as decorative plants in gardens.</p>
+                </div>
+              </section>
+        
+              <!-- Lilac Card -->
+              <section class="plant-card" id="lilac-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/lilac.webp" alt="Lilac Flower" class="plant-image">
+                <h3>Lilac</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="lilac" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="lilac" data-type="household">Household Use</button>
+                </div>
+                <!-- Lilac Content -->
+                <div class="plant-content" id="lilac-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Lilacs are used in traditional medicine to treat skin conditions and reduce fever.</p>
+                </div>
+                <div class="plant-content" id="lilac-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Lilacs are often used in floral arrangements and as fragrant garden plants.</p>
+                </div>
+              </section>
+        
+              <!-- Sweet Pea Card -->
+              <section class="plant-card" id="sweet-pea-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/swwet pea.webp" alt="Sweet Pea Flower" class="plant-image">
+                <h3>Sweet Pea</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="sweet-pea" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="sweet-pea" data-type="household">Household Use</button>
+                </div>
+                <!-- Sweet Pea Content -->
+                <div class="plant-content" id="sweet-pea-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Sweet peas are used in traditional medicine to treat respiratory issues and reduce inflammation.</p>
+                </div>
+                <div class="plant-content" id="sweet-pea-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Sweet peas are popular in floral arrangements and as climbing garden plants.</p>
+                </div>
+              </section>
+        
+              <!-- Freesia Card -->
+              <section class="plant-card" id="freesia-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/freesia.webp" alt="Freesia Flower" class="plant-image">
+                <h3>Freesia</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="freesia" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="freesia" data-type="household">Household Use</button>
+                </div>
+                <!-- Freesia Content -->
+                <div class="plant-content" id="freesia-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Freesias are used in aromatherapy to reduce stress and improve mood.</p>
+                </div>
+                <div class="plant-content" id="freesia-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Freesias are often used in perfumes and as decorative flowers in bouquets.</p>
+                </div>
+              </section>
+        
+              <!-- Honeysuckle Card -->
+              <section class="plant-card" id="honeysuckle-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/honeysuckle.webp" alt="Honeysuckle Flower" class="plant-image">
+                <h3>Honeysuckle</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="honeysuckle" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="honeysuckle" data-type="household">Household Use</button>
+                </div>
+                <!-- Honeysuckle Content -->
+                <div class="plant-content" id="honeysuckle-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Honeysuckle is used in traditional medicine to treat colds, flu, and skin infections.</p>
+                </div>
+                <div class="plant-content" id="honeysuckle-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Honeysuckle is often used in gardens for its sweet fragrance and as a natural air freshener.</p>
+                </div>
+              </section>
+        
+              <!-- Bromeliad Card -->
+              <section class="plant-card" id="bromeliad-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/bromeliad.webp" alt="Bromeliad Flower" class="plant-image">
+                <h3>Bromeliad</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="bromeliad" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="bromeliad" data-type="household">Household Use</button>
+                </div>
+                <!-- Bromeliad Content -->
+                <div class="plant-content" id="bromeliad-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Bromeliads are used in traditional medicine to treat digestive issues and reduce inflammation.</p>
+                </div>
+                <div class="plant-content" id="bromeliad-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Bromeliads are popular as ornamental plants and are often used in tropical garden designs.</p>
+                </div>
+              </section>
+        
+              <!-- Canna Lily Card -->
+              <section class="plant-card" id="canna-lily-card">
+                <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/canna lilly.webp" alt="Canna Lily Flower" class="plant-image">
+                <h3>Canna Lily</h3>
+                <div class="plant-buttons">
+                  <button class="medical-btn" data-plant="canna-lily" data-type="medical">Medical Use</button>
+                  <button class="household-btn" data-plant="canna-lily" data-type="household">Household Use</button>
+                </div>
+                <!-- Canna Lily Content -->
+                <div class="plant-content" id="canna-lily-medical" style="display: none;">
+                  <p><strong>Medical Use:</strong> Canna lilies are used in traditional medicine to treat skin conditions and reduce inflammation.</p>
+                </div>
+                <div class="plant-content" id="canna-lily-household" style="display: none;">
+                  <p><strong>Household Use:</strong> Canna lilies are popular as ornamental plants and are often used in tropical garden designs.</p>
+                </div>
+              </section>
+              <!-- Bougainvillea Card -->
+<section class="plant-card" id="bougainvillea-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/bougailvillea.webp" alt="Bougainvillea Flower" class="plant-image">
+  <h3>Bougainvillea</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="bougainvillea" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="bougainvillea" data-type="household">Household Use</button>
+  </div>
+  <!-- Bougainvillea Content -->
+  <div class="plant-content" id="bougainvillea-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Bougainvillea flowers are used in traditional medicine to treat coughs and sore throats.</p>
+  </div>
+  <div class="plant-content" id="bougainvillea-household" style="display: none;">
+    <p><strong>Household Use:</strong> Bougainvillea is often used as a decorative plant for fences and walls due to its vibrant colors.</p>
+  </div>
+</section>
+<!-- Tulip Card -->
+<section class="plant-card" id="tulip-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/tulip.webp" alt="Tulip Flower" class="plant-image">
+  <h3>Tulip</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="tulip" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="tulip" data-type="household">Household Use</button>
+  </div>
+  <!-- Tulip Content -->
+  <div class="plant-content" id="tulip-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Tulip extracts are used in skincare products for their soothing properties.</p>
+  </div>
+  <div class="plant-content" id="tulip-household" style="display: none;">
+    <p><strong>Household Use:</strong> Tulips are popular as ornamental plants and are often used in floral arrangements.</p>
+  </div>
+</section>
+<!-- Daisy Card -->
+<section class="plant-card" id="daisy-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/daisy.webp" alt="Daisy Flower" class="plant-image">
+  <h3>Daisy</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="daisy" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="daisy" data-type="household">Household Use</button>
+  </div>
+  <!-- Daisy Content -->
+  <div class="plant-content" id="daisy-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Daisies are used in herbal remedies to treat wounds and reduce inflammation.</p>
+  </div>
+  <div class="plant-content" id="daisy-household" style="display: none;">
+    <p><strong>Household Use:</strong> Daisies are often used in floral arrangements and as garden borders.</p>
+  </div>
+</section>
+<!-- Freesia Card -->
+<section class="plant-card" id="freesia-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/freesia.webp" alt="Freesia Flower" class="plant-image">
+  <h3>Freesia</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="freesia" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="freesia" data-type="household">Household Use</button>
+  </div>
+  <!-- Freesia Content -->
+  <div class="plant-content" id="freesia-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Freesia essential oil is used in aromatherapy to reduce stress and anxiety.</p>
+  </div>
+  <div class="plant-content" id="freesia-household" style="display: none;">
+    <p><strong>Household Use:</strong> Freesia flowers are used in perfumes and as decorative elements in weddings.</p>
+  </div>
+</section>
+<!-- Ixora Card -->
+<section class="plant-card" id="ixora-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/ixora.webp" alt="Ixora Flower" class="plant-image">
+  <h3>Ixora</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="ixora" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="ixora" data-type="household">Household Use</button>
+  </div>
+  <!-- Ixora Content -->
+  <div class="plant-content" id="ixora-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Ixora flowers are used in traditional medicine to treat dysentery and skin disorders.</p>
+  </div>
+  <div class="plant-content" id="ixora-household" style="display: none;">
+    <p><strong>Household Use:</strong> Ixora is often used as a hedge plant due to its dense foliage and vibrant flowers.</p>
+  </div>
+</section>
+<!-- Sunflower Card -->
+<section class="plant-card" id="sunflower-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/sunflower.webp" alt="Sunflower Flower" class="plant-image">
+  <h3>Sunflower</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="sunflower" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="sunflower" data-type="household">Household Use</button>
+  </div>
+  <!-- Sunflower Content -->
+  <div class="plant-content" id="sunflower-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Sunflower seeds are rich in vitamin E and are used to promote heart health.</p>
+  </div>
+  <div class="plant-content" id="sunflower-household" style="display: none;">
+    <p><strong>Household Use:</strong> Sunflowers are used in floral arrangements and as a source of cooking oil.</p>
+  </div>
+</section>
+<!-- Orchid Card -->
+<section class="plant-card" id="orchid-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/orchid.webp" alt="Orchid Flower" class="plant-image">
+  <h3>Orchid</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="orchid" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="orchid" data-type="household">Household Use</button>
+  </div>
+  <!-- Orchid Content -->
+  <div class="plant-content" id="orchid-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Orchid extracts are used in skincare products for their anti-aging properties.</p>
+  </div>
+  <div class="plant-content" id="orchid-household" style="display: none;">
+    <p><strong>Household Use:</strong> Orchids are popular as ornamental plants due to their exotic appearance.</p>
+  </div>
+</section>
+<!-- Marigold Card -->
+<section class="plant-card" id="marigold-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/marigold.webp" alt="Marigold Flower" class="plant-image">
+  <h3>Marigold</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="marigold" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="marigold" data-type="household">Household Use</button>
+  </div>
+  <!-- Marigold Content -->
+  <div class="plant-content" id="marigold-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Marigold is used to treat skin irritations and promote wound healing.</p>
+  </div>
+  <div class="plant-content" id="marigold-household" style="display: none;">
+    <p><strong>Household Use:</strong> Marigolds are used in garlands and as natural insect repellents.</p>
+  </div>
+</section>
+<!-- Jasmine Card -->
+<section class="plant-card" id="jasmine-card">
+  <img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/jasmine.webp" alt="Jasmine Flower" class="plant-image">
+  <h3>Jasmine</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="jasmine" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="jasmine" data-type="household">Household Use</button>
+  </div>
+  <!-- Jasmine Content -->
+  <div class="plant-content" id="jasmine-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Jasmine tea is used to reduce stress and improve sleep quality.</p>
+  </div>
+  <div class="plant-content" id="jasmine-household" style="display: none;">
+    <p><strong>Household Use:</strong> Jasmine flowers are used in perfumes and as decorative elements in weddings.</p>
+  </div>
+</section>
+        </div>
+    </section>
+<!-- Fruits Section -->
+<section id="fruits" class="plant-section">
+  <h2 style="text-align: center;">Fruits</h2>
+
+<div class="plant-cards-container">
+
+   <!-- Apple Card -->
+<section class="plant-card" id="apple-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/apple.webp" alt="Apple Plant" class="plant-image">
+
+  <h3>Apple</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="apple" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="apple" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="apple-medical">
+    <p><strong>Medical Use:</strong> Apples improve heart health and aid digestion.</p>
+  </div>
+  <div class="plant-content" id="apple-household">
+    <p><strong>Household Use:</strong> Used in making natural face masks and air fresheners.</p>
+  </div>
+</section>
+
+<!-- Banana Card -->
+<section class="plant-card" id="banana-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/banana.webp" alt="Banana Plant" class="plant-image">
+
+  <h3>Banana</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="banana" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="banana" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="banana-medical">
+    <p><strong>Medical Use:</strong> Bananas are rich in potassium, helping to regulate blood pressure.</p>
+  </div>
+  <div class="plant-content" id="banana-household">
+    <p><strong>Household Use:</strong> Banana peels are used for polishing silverware and treating skin irritation.</p>
+  </div>
+</section>
+  <!-- Peach Card -->
+<section class="plant-card" id="peach-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/peach.webp" alt="Peach Plant" class="plant-image">
+
+  <h3>Peach</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="peach" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="peach" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="peach-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Peaches are rich in vitamins and antioxidants, promoting skin health.</p>
+  </div>
+  <div class="plant-content" id="peach-household" style="display: none;">
+    <p><strong>Household Use:</strong> Used in jams and desserts for natural sweetness.</p>
+  </div>
+</section>
+
+<!-- Pear Card -->
+<section class="plant-card" id="pear-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/pear.webp" alt="Pear Plant" class="plant-image">
+
+  <h3>Pear</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="pear" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="pear" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="pear-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Pears aid digestion and provide essential fiber.</p>
+  </div>
+  <div class="plant-content" id="pear-household" style="display: none;">
+    <p><strong>Household Use:</strong> Commonly used in fruit salads and juices.</p>
+  </div>
+</section>
+<!-- Avocado Card -->
+<section class="plant-card" id="avocado-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/avocado.webp" alt="Avocado Fruit" class="plant-image">
+
+  <h3>Avocado</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="avocado" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="avocado" data-type="household">Household Use</button>
+  </div>
+  <!-- Avocado Content -->
+  <div class="plant-content" id="avocado-medical">
+    <p><strong>Medical Use:</strong> Avocados are rich in healthy fats, which help improve heart health and lower cholesterol.</p>
+  </div>
+  <div class="plant-content" id="avocado-household">
+    <p><strong>Household Use:</strong> Avocado oil is used in skincare products for its moisturizing properties.</p>
+  </div>
+</section>
+<!-- Cherry Card -->
+<section class="plant-card" id="cherry-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/cherry.webp" alt="Cherry Fruit" class="plant-image">
+
+  <h3>Cherry</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="cherry" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="cherry" data-type="household">Household Use</button>
+  </div>
+  <!-- Cherry Content -->
+  <div class="plant-content" id="cherry-medical">
+    <p><strong>Medical Use:</strong> Cherries are known to reduce inflammation and improve sleep quality due to their melatonin content.</p>
+  </div>
+  <div class="plant-content" id="cherry-household">
+    <p><strong>Household Use:</strong> Cherries are used in desserts, jams, and as a natural food coloring.</p>
+  </div>
+</section>
+<!-- Fig Card -->
+<section class="plant-card" id="fig-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/fig.webp" alt="Fig Fruit" class="plant-image">
+
+  <h3>Fig</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="fig" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="fig" data-type="household">Household Use</button>
+  </div>
+  <!-- Fig Content -->
+  <div class="plant-content" id="fig-medical">
+    <p><strong>Medical Use:</strong> Figs are rich in fiber and help improve digestion and regulate blood sugar levels.</p>
+  </div>
+  <div class="plant-content" id="fig-household">
+    <p><strong>Household Use:</strong> Figs are used in baking, desserts, and as a natural sweetener.</p>
+  </div>
+</section>
+<!-- Lemon Card -->
+<section class="plant-card" id="lemon-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/lemon.webp" alt="Lemon Fruit" class="plant-image">
+
+  <h3>Lemon</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="lemon" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="lemon" data-type="household">Household Use</button>
+  </div>
+  <!-- Lemon Content -->
+  <div class="plant-content" id="lemon-medical">
+    <p><strong>Medical Use:</strong> Lemons are rich in vitamin C and help boost immunity and detoxify the body.</p>
+  </div>
+  <div class="plant-content" id="lemon-household">
+    <p><strong>Household Use:</strong> Lemons are used for cleaning, as a natural deodorizer, and in cooking.</p>
+  </div>
+</section>
+<!-- Orange Card -->
+<section class="plant-card" id="orange-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/orange.webp" alt="Orange Fruit" class="plant-image">
+
+  <h3>Orange</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="orange" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="orange" data-type="household">Household Use</button>
+  </div>
+  <!-- Orange Content -->
+  <div class="plant-content" id="orange-medical">
+    <p><strong>Medical Use:</strong> Oranges are rich in vitamin C and antioxidants, which help boost immunity and skin health.</p>
+  </div>
+  <div class="plant-content" id="orange-household">
+    <p><strong>Household Use:</strong> Oranges are used in juices, desserts, and as a natural air freshener.</p>
+  </div>
+</section>
+<!-- Sapota Card -->
+<section class="plant-card" id="sapota-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/sapota.webp" alt="Sapota Fruit" class="plant-image">
+
+  <h3>Sapota</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="sapota" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="sapota" data-type="household">Household Use</button>
+  </div>
+  <!-- Sapota Content -->
+  <div class="plant-content" id="sapota-medical">
+    <p><strong>Medical Use:</strong> Sapota is rich in dietary fiber, which aids digestion and helps prevent constipation. It also contains antioxidants that boost immunity.</p>
+  </div>
+  <div class="plant-content" id="sapota-household">
+    <p><strong>Household Use:</strong> Sapota is used in desserts, milkshakes, and as a natural sweetener in smoothies.</p>
+  </div>
+</section>
+<!-- Pomegranate Card -->
+<section class="plant-card" id="pomegranate-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/pomegranate.webp" alt="Pomegranate Fruit" class="plant-image">
+
+  <h3>Pomegranate</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="pomegranate" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="pomegranate" data-type="household">Household Use</button>
+  </div>
+  <!-- Pomegranate Content -->
+  <div class="plant-content" id="pomegranate-medical">
+    <p><strong>Medical Use:</strong> Pomegranates are rich in antioxidants and help improve heart health and reduce inflammation.</p>
+  </div>
+  <div class="plant-content" id="pomegranate-household">
+    <p><strong>Household Use:</strong> Pomegranates are used in juices, salads, and as a natural food coloring.</p>
+  </div>
+</section>
+<!-- Grape Card -->
+<section class="plant-card" id="grape-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/grape.webp" alt="Grape Plant" class="plant-image">
+
+  <h3>Grape</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="grape" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="grape" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="grape-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Grapes contain resveratrol, which promotes heart health and reduces inflammation.</p>
+  </div>
+  <div class="plant-content" id="grape-household" style="display: none;">
+    <p><strong>Household Use:</strong> Grapes are used for making juices, wines, and natural dyes.</p>
+  </div>
+</section>
+
+<!-- Mango Card -->
+<section class="plant-card" id="mango-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/mango.webp" alt="Mango Plant" class="plant-image">
+
+  <h3>Mango</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="mango" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="mango" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="mango-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Mangoes are rich in vitamins A and C, boosting immunity and skin health.</p>
+  </div>
+  <div class="plant-content" id="mango-household" style="display: none;">
+    <p><strong>Household Use:</strong> Mangoes are used in making smoothies, pickles, and desserts.</p>
+  </div>
+</section>
+
+<!-- Strawberry Card -->
+<section class="plant-card" id="strawberry-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/strawberry.webp" alt="Strawberry Plant" class="plant-image">
+
+  <h3>Strawberry</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="strawberry" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="strawberry" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="strawberry-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Strawberries have anti-inflammatory properties and improve heart health.</p>
+  </div>
+  <div class="plant-content" id="strawberry-household" style="display: none;">
+    <p><strong>Household Use:</strong> Used in jams, desserts, and natural face masks.</p>
+  </div>
+</section>
+
+<!-- Raspberry Card -->
+<section class="plant-card" id="raspberry-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/raspberry.webp" alt="Raspberry Plant" class="plant-image">
+
+  <h3>Raspberry</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="raspberry" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="raspberry" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="raspberry-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Rich in antioxidants, improves heart health.</p>
+  </div>
+  <div class="plant-content" id="raspberry-household" style="display: none;">
+    <p><strong>Household Use:</strong> Used in jams, desserts, and syrups.</p>
+  </div>
+</section>
+
+<!-- Blueberry Card -->
+<section class="plant-card" id="blueberry-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/blueberry.webp" alt="Blueberry Plant" class="plant-image">
+
+  <h3>Blueberry</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="blueberry" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="blueberry" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="blueberry-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Boosts brain function and supports immune health.</p>
+  </div>
+  <div class="plant-content" id="blueberry-household" style="display: none;">
+    <p><strong>Household Use:</strong> Used in baking, smoothies, and preserves.</p>
+  </div>
+</section>
+
+<!-- Pineapple Card -->
+<section class="plant-card" id="pineapple-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/pineapple.webp" alt="Pineapple Plant" class="plant-image">
+
+  <h3>Pineapple</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="pineapple" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="pineapple" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="pineapple-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> Aids digestion and reduces inflammation.</p>
+  </div>
+  <div class="plant-content" id="pineapple-household" style="display: none;">
+    <p><strong>Household Use:</strong> Used in juices, tropical dishes, and skincare.</p>
+  </div>
+</section>
+
+<!-- Kiwi Card -->
+<section class="plant-card" id="kiwi-card">
+<img src="https://raw.githubusercontent.com/Neeraja3170/gardenCare/refs/heads/main/kiwi.webp" alt="Kiwi Plant" class="plant-image">
+
+  <h3>Kiwi</h3>
+  <div class="plant-buttons">
+    <button class="medical-btn" data-plant="kiwi" data-type="medical">Medical Use</button>
+    <button class="household-btn" data-plant="kiwi" data-type="household">Household Use</button>
+  </div>
+  <div class="plant-content" id="kiwi-medical" style="display: none;">
+    <p><strong>Medical Use:</strong> High in vitamin C, boosts immunity and digestion.</p>
+  </div>
+  <div class="plant-content" id="kiwi-household" style="display: none;">
+    <p><strong>Household Use:</strong> Used in fruit salads, smoothies, and decorations.</p>
+  </div>
+</section>
+
+</div>
+</section>
+
+  <!-- Garden Tips Section -->
+<section class="garden-tips" id="garden-tips">
+
+    <h1>Garden Tips</h1>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for tips...">
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+      <button class="filter-btn" data-filter="plant-care">Plant Care</button>
+      <button class="filter-btn" data-filter="diy">DIY</button>
+      <button class="filter-btn" data-filter="pest">Pest Control</button>
+      <button class="filter-btn" data-filter="watering">Watering</button>
+      <button class="filter-btn" data-filter="beginner">Beginner</button>
+      <button class="filter-btn" data-filter="sustainable">Sustainable</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+
+    <!-- Tips Container -->
+    <div class="tips-container">
+      <!-- Seasonal Gardening Tips -->
+      <div class="tip-card" data-category="seasonal">
+        <h2>Seasonal Gardening Tips</h2>
+        <p>Get expert advice on how to care for your garden throughout the year. Learn what to plant, prune, and protect in each season.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Spring:</strong>Plant bulbs and prune shrubs. <strong>Summer:</strong> Water early in the morning. <strong>Fall:</strong> Rake leaves and plant perennials. <strong>Winter:</strong> Protect plants from frost.</p>
+        </div>
+      </div>
+
+      <!-- Plant Care Guides -->
+      <div class="tip-card" data-category="plant-care">
+        <h2>Plant Care Guides</h2>
+        <p>Discover detailed guides on how to grow and care for specific plants, from roses to succulents and vegetables.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Roses:</strong> Prune in early spring and fertilize monthly. <strong>Succulents:</strong> Use well-draining soil and water sparingly. <strong>Tomatoes:</strong> Provide full sun and consistent watering.</p>
+        </div>
+      </div>
+
+      <!-- DIY Garden Projects -->
+      <div class="tip-card" data-category="diy">
+        <h2>DIY Garden Projects</h2>
+        <p>Find fun and creative DIY projects to enhance your garden, like building raised beds or making homemade planters.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Raised Beds:</strong> Use recycled wood to build a raised garden bed. <strong>Vertical Garden:</strong> Create a vertical garden with pallets. <strong>Compost Bin:</strong> Make a compost bin from old barrels.</p>
+        </div>
+      </div>
+
+      <!-- Pest and Disease Management -->
+      <div class="tip-card" data-category="pest">
+        <h2>Pest and Disease Management</h2>
+        <p>Learn how to identify and manage common garden pests and diseases with organic and chemical solutions.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Aphids:</strong> Use neem oil or insecticidal soap. <strong>Slugs:</strong> Apply diatomaceous earth. <strong>Fungal Diseases:</strong> Use copper fungicide.</p>
+        </div>
+      </div>
+
+      <!-- Watering and Fertilizing Tips -->
+      <div class="tip-card" data-category="watering">
+        <h2>Watering and Fertilizing Tips</h2>
+        <p>Master the art of watering and fertilizing your plants for optimal growth and health.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Watering:</strong> Water deeply but infrequently to encourage deep root growth. <strong>Fertilizing:</strong> Use organic fertilizers like compost or fish emulsion.</p>
+        </div>
+      </div>
+
+      <!-- Gardening for Beginners -->
+      <div class="tip-card" data-category="beginner">
+        <h2>Gardening for Beginners</h2>
+        <p>New to gardening? Start here with our beginner-friendly tips and step-by-step guides.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Start Small:</strong> Begin with easy-to-grow plants like herbs and lettuce. <strong>Soil Quality:</strong> Use nutrient-rich soil and compost. <strong>Consistency:</strong> Water regularly but avoid overwatering.</p>
+        </div>
+      </div>
+
+      <!-- Sustainable Gardening Practices -->
+      <div class="tip-card" data-category="sustainable">
+        <h2>Sustainable Gardening Practices</h2>
+        <p>Discover eco-friendly gardening techniques like composting, rainwater harvesting, and using native plants.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Composting:</strong> Turn kitchen scraps into nutrient-rich compost. <strong>Rainwater Harvesting:</strong> Collect rainwater in barrels for irrigation. <strong>Native Plants:</strong> Choose plants adapted to your region.</p>
+        </div>
+      </div>
+
+      <!-- Garden Design Ideas -->
+      <div class="tip-card" data-category="design">
+        <h2>Garden Design Ideas</h2>
+        <p>Get inspired with beautiful garden design ideas, from cottage gardens to modern landscapes.</p>
+        <button class="expand-btn">Read More</button>
+        <div class="more-content">
+          <p><strong>Cottage Garden:</strong> Use a mix of flowers, herbs, and vegetables. <strong>Modern Garden:</strong> Focus on clean lines and minimalism. <strong>Edible Landscape:</strong> Integrate fruits and vegetables into your garden design.</p>
+        </div>
+      </div>
+      <!-- Companion Planting Tips -->
+<div class="tip-card" data-category="companion">
+  <h2>Companion Planting Tips</h2>
+  <p>Learn which plants grow well together to improve growth and deter pests.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Examples:</strong> Plant basil near tomatoes to repel pests. Grow marigolds with vegetables to deter nematodes.</p>
+  </div>
+</div>
+
+<!-- Soil Health Tips -->
+<div class="tip-card" data-category="soil">
+  <h2>Soil Health Tips</h2>
+  <p>Discover how to maintain healthy soil for better plant growth.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Tips:</strong> Add compost regularly, test soil pH, and use cover crops to improve soil fertility.</p>
+  </div>
+</div>
+
+<!-- Container Gardening Tips -->
+<div class="tip-card" data-category="container">
+  <h2>Container Gardening Tips</h2>
+  <p>Grow plants in containers for small spaces or urban gardens.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Tips:</strong> Use well-draining soil, choose the right container size, and water regularly.</p>
+  </div>
+</div>
+
+<!-- Pollinator-Friendly Gardening Tips -->
+<div class="tip-card" data-category="pollinator">
+  <h2>Pollinator-Friendly Gardening Tips</h2>
+  <p>Attract bees, butterflies, and other pollinators to your garden.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Tips:</strong> Plant native flowers, avoid pesticides, and provide water sources for pollinators.</p>
+  </div>
+</div>
+
+<!-- Pruning Tips -->
+<div class="tip-card" data-category="pruning">
+  <h2>Pruning Tips</h2>
+  <p>Learn how to prune plants for better growth and shape.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Tips:</strong> Prune in late winter or early spring, remove dead branches, and use clean tools.</p>
+  </div>
+</div>
+
+<!-- Mulching Tips -->
+<div class="tip-card" data-category="mulching">
+  <h2>Mulching Tips</h2>
+  <p>Use mulch to conserve moisture and suppress weeds.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Tips:</strong> Use organic mulch like wood chips or straw, and apply a 2-3 inch layer around plants.</p>
+  </div>
+</div>
+
+<!-- Organic Gardening Tips -->
+<div class="tip-card" data-category="organic">
+  <h2>Organic Gardening Tips</h2>
+  <p>Grow plants without synthetic chemicals for a healthier garden.</p>
+  <button class="expand-btn">Read More</button>
+  <div class="more-content">
+    <p><strong>Tips:</strong> Use compost, organic fertilizers, and natural pest control methods.</p>
+  </div>
+</div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Slideshow Container -->
+    <div class="slideshow">
+      <div class="slide active" style="background-image: url('./DALL·E 2025-02-20 19.51.55 - A serene garden with tiny plants being carefully nurtured. The scene includes small saplings in decorative pots, young sprouts emerging from the soil,.webp');"></div>
+      <div class="slide" style="background-image: url('./DALL·E 2025-02-20 19.53.53 - A vibrant garden filled with fresh, ripe fruits growing on trees and bushes. The garden includes apples, oranges, strawberries, and grapes hanging fro.webp');"></div>
+      <div class="slide" style="background-image: url('./DALL·E 2025-02-20 19.54.02 - A lush vegetable garden filled with fresh, healthy vegetables. The garden has rows of green leafy vegetables like spinach and lettuce, along with brig.webp');"></div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+  </html>
+<!-- Slideshow Container -->
+  <div class="slideshow">
+    <div class="slide active" style="background-image: url('./DALL·E 2025-02-20 19.51.55 - A serene garden with tiny plants being carefully nurtured. The scene includes small saplings in decorative pots, young sprouts emerging from the soil,.webp');"></div>
+    <div class="slide" style="background-image: url('./DALL·E 2025-02-20 19.53.53 - A vibrant garden filled with fresh, ripe fruits growing on trees and bushes. The garden includes apples, oranges, strawberries, and grapes hanging fro.webp');"></div>
+    <div class="slide" style="background-image: url('./DALL·E 2025-02-20 19.54.02 - A lush vegetable garden filled with fresh, healthy vegetables. The garden has rows of green leafy vegetables like spinach and lettuce, along with brig.webp');"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- Community Section -->
+<section id="community">
+  <h2>Community</h2>
+  <p>Join our gardening community to share tips, ask questions, and connect with fellow garden enthusiasts!</p>
+
+  <!-- Community Forum -->
+  <div class="community-feature">
+    <h3>Community Forum</h3>
+    <p>Ask questions, share tips, and discuss gardening topics with our active community.</p>
+    <div id="forum">
+      <textarea id="forum-question" placeholder="Ask a question..."></textarea>
+      <button id="post-question" class="btn">Post Question</button>
+      <div id="forum-posts"></div>
+    </div>
+  </div>
+
+  <!-- User Stories -->
+  <div class="community-feature">
+    <h3>User Stories</h3>
+    <p>Share your gardening journey and read inspiring stories from other gardeners.</p>
+    <div id="stories">
+      <textarea id="story-text" placeholder="Share your story..."></textarea>
+      <input type="file" id="story-image" accept="image/*">
+      <button id="post-story" class="btn">Post Story</button>
+      <div id="story-posts"></div>
+    </div>
+  </div>
+
+  <!-- Events and Workshops -->
+  <div class="community-feature">
+    <h3>Events & Workshops</h3>
+    <p>Join our upcoming gardening events, workshops, and webinars.</p>
+    <div id="events">
+      <ul id="event-list">
+        <li>Gardening 101 Workshop - <button class="register-btn" data-event="gardening-101">Register</button></li>
+        <li>Organic Farming Webinar - <button class="register-btn" data-event="organic-farming">Register</button></li>
+      </ul>
+      <div id="registration-message"></div>
+    </div>
+  </div>
+
+  <!-- Gardening Challenges -->
+  <div class="community-feature">
+    <h3>Gardening Challenges</h3>
+    <p>Participate in fun gardening challenges and win exciting prizes!</p>
+    <div id="challenges">
+      <select id="challenge-select">
+        <option value="best-balcony-garden">Best Balcony Garden</option>
+        <option value="most-creative-arrangement">Most Creative Plant Arrangement</option>
+      </select>
+      <button id="join-challenge" class="btn">Join Challenge</button>
+      <div id="challenge-message"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about-us">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Garden Care</strong>, a project created with a passion for gardening and technology. 
+      As a BTech student specializing in Artificial Intelligence (graduating in 2026), I designed this website 
+      to inspire and guide garden enthusiasts in cultivating their own green spaces.
+    </p>
+
+    <h3>The Inspiration Behind Garden Care</h3>
+    <p>
+      Gardening has always fascinated me as a way to connect with nature and create something beautiful. 
+      With this website, I aim to share my love for gardening and provide a resource that helps people grow 
+      their own vegetables, fruits, and flowers. Whether you’re a beginner or an experienced gardener, 
+      Garden Care is here to support your journey.
+    </p>
+
+    <h3>What This Website Offers</h3>
+    <ul>
+      <li>
+        <strong>Collection of Plants:</strong>A website providing information about vegetables, fruits, flowers, and their uses might explain how these plants not only enhance your garden but also offer numerous health and household benefits. Vegetables, rich in essential nutrients and vitamins, support overall health and are often used in traditional remedies for digestion and inflammation. Fruits, packed with antioxidants and natural sugars, promote heart health, improve skin, and are commonly used in home remedies for colds and fatigue. Flowers, beyond their beauty, have medicinal properties—lavender aids relaxation, chamomile soothes skin, and hibiscus can help with mild infections. Incorporating these plants into your garden care routine not only ensures a vibrant and productive garden but also provides natural solutions for health and household needs, such as using lemon for cleaning or rosewater for skincare. Explore a wide variety of vegetables, fruits, and flower plants 
+        that you can grow in your garden. From tomatoes and strawberries to roses and sunflowers, we’ve got you covered.
+      </li>
+      <li>
+        <strong>Gardening Tips & Guides:</strong> Here are some fun and practical gardening tips with emojis to keep your garden thriving:
+
+        1. **🌱 Start with Soil Prep**: Test your soil and enrich it with compost or organic matter. Healthy soil = happy plants!  
+        2. **💧 Water Wisely**: Water deeply but less frequently to encourage strong root growth. Early morning is the best time!  
+        3. **✂️ Prune with Purpose**: Trim dead or overgrown branches to promote healthy growth and better airflow.  
+        4. **🌼 Plant Seasonal Flowers**: Add colorful spring blooms like tulips, daffodils, and pansies for a vibrant garden.  
+        5. **🪴 Mulch Matters**: Spread mulch around plants to retain moisture, suppress weeds, and regulate soil temperature.  
+        6. **🐞 Pest Control**: Keep an eye out for pests and use natural remedies like neem oil or companion planting.  
+        7. **🌿 Grow Herbs & Veggies**: Plant herbs like basil, mint, and veggies like tomatoes and lettuce for fresh, homegrown meals.  
+        8. **🌸 Deadhead Spent Blooms**: Remove faded flowers to encourage new growth and prolong blooming.  
+        9. **🌞 Sunlight Check**: Ensure plants get the right amount of sunlight—some love full sun, while others prefer shade.  
+        10. **📅 Plan Ahead**: Keep a gardening journal to track planting dates, growth progress, and seasonal tasks.  
+        
+        Happy gardening! 🌻🌿🪴
+      </li>
+      <li>
+        <strong>AI-Generated Visuals:</strong> All the images on this website are created using AI tools, 
+        showcasing the beauty of gardening in a unique and modern way.
+      </li>
+    </ul>
+
+    <h3>Why I Built This Website</h3>
+    <p>
+      As a student of AI, I wanted to combine my technical skills with my interest in gardening to create 
+      something practical and inspiring. This website is a reflection of my belief that technology can enhance 
+      our connection with nature. By using AI-generated images, I aimed to bring a fresh and creative perspective 
+      to the world of gardening.
+    </p>
+
+    <h3>My Vision</h3>
+    <p>
+      I envision Garden Care as a platform that helps people discover the joy of growing their own food and 
+      creating beautiful outdoor spaces. In the future, I hope to expand this project by incorporating more 
+      advanced AI features, such as personalized plant recommendations and garden design tools.
+    </p>
+  </div>
+</section>
+
+<section id="contact-us">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>
+      We’d love to hear from you! Whether you have a question about gardening, feedback about the website, 
+      or just want to share your gardening journey, feel free to reach out. Your input helps us grow and improve!
+    </p>
+
+    <div class="contact-details">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:contact@gardencare.com">contact@gardencare.com</a></li>
+        <li><strong>Social Media:</strong> Follow us on <a href="#">Instagram</a> or <a href="#">Twitter</a>.</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
